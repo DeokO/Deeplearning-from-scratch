@@ -26,7 +26,7 @@ def filter_show(filters, nx=4, show_num=16):
 
 
 network = SimpleConvNet(input_dim=(1, 28, 28),
-                        conv_param={'filter_num': 30, 'filter_size': 5, 'pad': 0, 'stride': 1},
+                        conv_param={'filter_num': 30, 'filter_size': 5, 'filter_pad': 0, 'filter_stride': 1},
                         hidden_size=100, output_size=10, weight_init_std=0.01)
 
 # 학습된 가중치 불러오기
